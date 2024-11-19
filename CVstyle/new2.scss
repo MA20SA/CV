@@ -1,0 +1,145 @@
+$tester :1px solid red;
+$box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+$themeColor:  #009688;
+$text: #757575;
+body{
+  background-color: #f1f1f1;
+}
+.PersonalInfo{
+  height:1140px;
+  width: 35%;
+  margin-left: 10px;
+  box-shadow: $box-shadow;
+  background-color: #F1F1F1;
+  position: relative;
+  margin-top: 10px;
+}
+h1{
+  position: absolute;
+  left: 20px;
+  top: 250px;
+}
+.PersonalInfo{
+  i{
+    color: $themeColor;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  p {
+    width: 200px;
+    height: 30px;
+    display:block;
+    color: $text;
+    padding-left: 30px;
+    font-size: 17px;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+}
+.LOADER{
+  margin-top: -10px;
+  height: 40px;
+  position: relative;
+}
+.loader{
+  width: 400px;
+  height: 17px;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 15px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #fff;
+}
+@mixin load{
+  text-align: center;
+  margin-left: 30px;
+  color: white;
+  font-size: 15px;
+  background-color: #009688;
+  border-radius: 10px 10px 10px 10px;
+  position: absolute;
+  top: -3px;
+}
+.load1{
+  @include load;
+  width: 350px;
+}
+.load2{
+  @include load;
+  width: 300px;
+}
+.load3{
+  @include load;
+  width: 250px;
+}
+.load4{
+  @include load;
+  width: 150px;
+}
+.load5{
+  @include load;
+  width: 400px;
+  color: $themeColor;
+}
+.load6{
+  @include load;
+  width: 200px;
+  color: #009688;
+}
+.load7{
+  @include load;
+  width: 120px;
+  color: $themeColor;
+}
+.PersonalInfo p span{
+    color: $themeColor;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.Experience ,.Education{
+  width: 60%;
+  height: 560px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  box-shadow: $box-shadow;
+  background-color: #F1F1F1;
+  i,pre{
+    padding-left: 15px;
+    color: $themeColor;
+    padding-right: 15px;
+    font-size: 18px;
+  }
+  p {
+    padding-left: 20px;
+    width: 100%;
+    height: 30px;
+    display:block;
+    color: black;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 5px;
+    opacity: 0.8;
+  }
+  button{
+    background-color: $themeColor;
+    color: #F1F1F1;
+    border-radius: 5px;
+  }
+}
+
+.Education{
+  width: 60%;
+  height: 550px;
+  position: absolute;
+  top: 600px;
+  right: 20px;
+  box-shadow: $box-shadow;
+  background-color: #F1F1F1;
+  display: inline-block;
+}
+.end{
+  width: 100%;
+  background-color: $themeColor;
+  height: 150px;
+}
